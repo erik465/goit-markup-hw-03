@@ -27,7 +27,6 @@ ul{
 
 .container{
     width: 1128px;
-    border: 3px solid red;
     margin: auto;
 }
 
@@ -51,14 +50,14 @@ ul{
 
 .header{
     display: flex;
-    justify-content: center;
+    padding: 24px 156px;
     border-bottom: 1px solid #E7E9FC;
 }
 
 .header-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .header-nav{
@@ -74,6 +73,8 @@ ul{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin-left: 76px;
+
    
 }
 
@@ -295,9 +296,7 @@ ul{
     color: #F4F4FD;
 }
 
-.footer-logo{
-    margin-bottom: 16px;
-}
+
 
 .footer{
     background: var(--navy-blue);
@@ -310,6 +309,8 @@ ul{
     line-height: 1.5;
     color: var(--cornflower);
     letter-spacing: 0.02em;
+
+    margin-top: 16px;
 
     max-width: 264px;
 
