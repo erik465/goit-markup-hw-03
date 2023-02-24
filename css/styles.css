@@ -364,6 +364,7 @@ ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 1134px;
 }
 
 
@@ -380,7 +381,9 @@ ul{
 }
 
 .jobs-list-item {
+    border: 1px solid #E7E9FC;
     padding-bottom: 32px;
+    text-align: left;
 }
 
 .jobs-list-item img{
@@ -392,7 +395,7 @@ ul{
     line-height: 1.2;
     color: var(--navy-blue);
     letter-spacing: 0.02em;
-
+    margin-left: 16px;
     margin-bottom: 8px;
 
 
@@ -402,5 +405,7 @@ ul{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-left: 16px;
+
 
 }
