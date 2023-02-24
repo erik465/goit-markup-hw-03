@@ -21,6 +21,10 @@ h1,h2,h3,h4,h5,h6,p{
     margin: 0;
 }
 
+ul{
+    padding: 0;
+}
+
 .container{
     width: 1128px;
     border: 3px solid red;
@@ -36,19 +40,19 @@ h1,h2,h3,h4,h5,h6,p{
     color: var(--iris);
 }
 
+
+
+
+
+/* -- HEADER --*/
 .header-logo-color{
     color: var(--navy-blue);
 }
 
-.footer-logo-color{
-    color: #F4F4FD;
-}
-
-/* -- HEADER --*/
-
 .header{
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .header-container{
@@ -136,7 +140,7 @@ h1,h2,h3,h4,h5,h6,p{
     text-align: center;
     letter-spacing: 0.02em;
 
-    width: 496px;
+    max-width: 496px;
 
     margin-bottom: 48px;
 }
@@ -155,8 +159,8 @@ h1,h2,h3,h4,h5,h6,p{
     border: none;
     border-radius: 4px;
 
-
-    padding: 16px 32px;
+    height: 56px;
+    min-width: 169px;
 
 }
 
@@ -167,16 +171,14 @@ h1,h2,h3,h4,h5,h6,p{
 
 /*-- FEATURES --*/
 .features{
-    display: flex;
-    justify-content: center;
-    padding: 120px 0;
+  
+    padding: 120px 156px;
 }
 
 
 
 .features-list{
     list-style: none;
-    padding: 0;
 
     display: flex;
     flex-direction: row;
@@ -227,7 +229,6 @@ h1,h2,h3,h4,h5,h6,p{
     display: flex;
     flex-direction: row;
     gap: 24px;
-    padding: 0;
 }
 /* -- /ABOUT --*/
 
@@ -236,7 +237,6 @@ h1,h2,h3,h4,h5,h6,p{
     background: #F4F4FD;
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     padding: 120px 156px;
 }
@@ -257,7 +257,6 @@ h1,h2,h3,h4,h5,h6,p{
     flex-direction: row;
     gap: 24px;
 
-    padding: 0;
 }
 .team-list-item{
     background: #fff;
@@ -292,6 +291,13 @@ h1,h2,h3,h4,h5,h6,p{
 /* -- /TEAM -- */
 
 /*-- FOOTER --*/
+.footer-logo-color{
+    color: #F4F4FD;
+}
+
+.footer-logo{
+    margin-bottom: 16px;
+}
 
 .footer{
     background: var(--navy-blue);
@@ -304,6 +310,8 @@ h1,h2,h3,h4,h5,h6,p{
     line-height: 1.5;
     color: var(--cornflower);
     letter-spacing: 0.02em;
+
+    max-width: 264px;
 
 }
 
@@ -318,6 +326,10 @@ h1,h2,h3,h4,h5,h6,p{
 
 .filters-list{
     list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
 }
 
 .filters-list-item button{
@@ -331,6 +343,12 @@ h1,h2,h3,h4,h5,h6,p{
     text-align: center;
     letter-spacing: 0.04em;
     cursor:pointer;
+
+    padding: 12px 24px;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
 }
 
 .filters-list-item button:hover, .filters-list-item button:focus{
@@ -338,8 +356,35 @@ h1,h2,h3,h4,h5,h6,p{
     color: #fff;
 }
 
+.jobs{
+    padding: 96px 156px 120px 156px;
+}
+
+.jobs-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
 .jobs-list{
     list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:24px;
+
+    
+}
+
+.jobs-list-item {
+    padding-bottom: 32px;
+}
+
+.jobs-list-item img{
+    margin-bottom: 32px;
 }
 
 .jobs-list-item  h2{
@@ -347,6 +392,8 @@ h1,h2,h3,h4,h5,h6,p{
     line-height: 1.2;
     color: var(--navy-blue);
     letter-spacing: 0.02em;
+
+    margin-bottom: 8px;
 
 
 }
