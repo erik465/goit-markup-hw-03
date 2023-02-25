@@ -13,6 +13,10 @@
     margin: 0;
  }
 
+ address{
+    font-style: normal;
+ }
+
  a{
     text-decoration: none;
 }
@@ -23,11 +27,15 @@ h1,h2,h3,h4,h5,h6,p{
 
 ul{
     padding: 0;
+    margin: 0;
 }
 
+img{display: block;}
+
 .container{
-    width: 1128px;
-    margin: auto;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .logo {
@@ -49,33 +57,28 @@ ul{
 }
 
 .header{
-    display: flex;
-    padding: 24px 156px;
     border-bottom: 1px solid #E7E9FC;
 }
 
 .header-container{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-nav{
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+
 }
 
 .header-list{
     list-style: none;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
     margin-left: 76px;
+    align-items: center;
 
-   
 }
 
 .header-list-item{
@@ -83,11 +86,14 @@ ul{
 }
 
 .header-list-item a{
+    display: block;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
+    padding: 24px 0px;
 }
 
 .header-list-item a:hover, .header-list-item a:focus{
@@ -97,13 +103,16 @@ ul{
 .header-contacts-list{
     list-style: none;
     display: flex;
-    flex-direction: row;
     align-items: center;
 
 }
 
 .header-contacts-list-item{
     margin-right: 40px;
+}
+
+.header-contacts-list-item:last-child{
+    margin: 0;
 }
 
 .header-contacts-list-item a{
@@ -122,17 +131,16 @@ ul{
 /*- HERO -*/
 .hero{
     background: var(--navy-blue);
-
+    padding: 180px;
 }
 
 .hero-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
-    width: 808px;
-    padding: 160px;
 }
+
+
 
 .hero-heading{
     font-size: 56px;
@@ -172,19 +180,18 @@ ul{
 
 /*-- FEATURES --*/
 .features{
-  
-    padding: 120px 156px;
+    padding: 120px 0;
 }
 
 
 
 .features-list{
     list-style: none;
-
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;  
     gap:24px;  
+}
+.features-list-item{
+    width: calc((100% - 3*24px)/4);
 }
 
 .features-list-item-heading{
@@ -210,8 +217,7 @@ ul{
 
 /*-- ABOUT --*/
 .about{
- 
-    padding: 120px  156px;
+    padding: 120px  0;
 }
 
 .about-heading{
@@ -228,8 +234,11 @@ ul{
     list-style: none;
 
     display: flex;
-    flex-direction: row;
     gap: 24px;
+}
+
+.about-list-item{ 
+    width: calc((100% - 2*24px)/3);
 }
 /* -- /ABOUT --*/
 
@@ -239,7 +248,7 @@ ul{
     display: flex;
     flex-direction: column;
 
-    padding: 120px 156px;
+    padding: 120px 0;
 }
 
 .team-heading{
@@ -249,20 +258,19 @@ ul{
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize; 
+    margin-bottom: 72px;
 }
 
 .team-list{
     list-style: none;
-
     display: flex;
-    flex-direction: row;
     gap: 24px;
 
 }
 .team-list-item{
     background: #fff;
     padding-bottom: 32px;
-
+    width: calc((100% - 3*24)/4);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px; 
 }
@@ -300,7 +308,7 @@ ul{
 
 .footer{
     background: var(--navy-blue);
-    padding: 100px 156px;
+    padding: 100px 0px;
 
 }
 
@@ -329,8 +337,8 @@ ul{
     list-style: none;
 
     display: flex;
-    flex-direction: row;
     gap: 24px;
+    margin-bottom: 84px;
 }
 
 .filters-list-item button{
@@ -347,25 +355,26 @@ ul{
 
     padding: 12px 24px;
 
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    border: 1px solid #E7E9FC;
 
 }
 
 .filters-list-item button:hover, .filters-list-item button:focus{
     background: var(--ocean);
     color: #fff;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border:transparent;
 }
 
 .jobs{
-    padding: 96px 156px 120px 156px;
+    padding: 96px 0 120px 0;
 }
 
 .jobs-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1134px;
 }
 
 
@@ -376,20 +385,26 @@ ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap:24px;
+    gap:48px 24px;
 
     
 }
 
 .jobs-list-item {
-    border: 1px solid #E7E9FC;
-    padding-bottom: 32px;
+    width: calc((100% - 2*24px)/3);
+   
     text-align: left;
 }
 
-.jobs-list-item img{
-    margin-bottom: 32px;
+.jobs-list-item-text{
+    border-left: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
+
+    padding: 32px 16px;
 }
+
+
 
 .jobs-list-item  h2{
     font-size: 20px;
